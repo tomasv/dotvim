@@ -52,6 +52,8 @@ autocmd FileType ruby,eruby let g:surround_35 = "#{\r}"
 "autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
+let g:rubycomplete_rails=1
+
 "map <F5> :make<CR><CR>:copen 8<CR><C-W>W
 "map <F6> :cp<CR>
 "map <F7> :cn<CR>
@@ -76,7 +78,7 @@ syntax on
 filetype plugin indent on
 
 hi link TagListFileName Normal
-hi Pmenu ctermbg=80
+hi Pmenu ctermbg=84
 
 set mouse=a
 
