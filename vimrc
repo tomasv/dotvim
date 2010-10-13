@@ -81,7 +81,8 @@ hi Pmenu ctermbg=80
 set mouse=a
 
 let g:SuperTabDefaultCompletionType="context"
-let g:SuperTabContextDefaultCompletionType="<c-x><c-p>"
+"let g:SuperTabContextDefaultCompletionType="<c-x><c-p>"
+"
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
