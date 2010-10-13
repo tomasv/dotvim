@@ -1,3 +1,60 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/tComment"]
+	path = bundle/tComment
+	url = git://github.com/vim-scripts/tComment.git
+[submodule "bundle/SuperTab"]
+	path = bundle/SuperTab
+	url = git://github.com/vim-scripts/SuperTab.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = git://github.com/vim-scripts/rails.vim.git
+[submodule "bundle/ZoomWin"]
+	path = bundle/ZoomWin
+	url = git://github.com/vim-scripts/ZoomWin.git
+[submodule "bundle/Command-T"]
+	path = bundle/Command-T
+	url = git://github.com/vim-scripts/Command-T.git
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = git://github.com/vim-scripts/FuzzyFinder
+[submodule "bundle/Align"]
+	path = bundle/Align
+	url = git://github.com/vim-scripts/Align
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/vim-scripts/surround.vim.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/vim-scripts/snipMate.git
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = git://github.com/vim-scripts/unimpaired.vim.git
+[submodule "bundle/toggle_words"]
+	path = bundle/toggle_words
+	url = git://github.com/vim-scripts/toggle_words.vim.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git://github.com/vim-scripts/delimitMate.vim.git
+[submodule "bundle/css"]
+	path = bundle/css
+	url = git://github.com/vim-scripts/css.vim.git
+[submodule "bundle/javacomplete"]
+	path = bundle/javacomplete
+	url = git://github.com/vim-scripts/javacomplete.git
+[submodule "bundle/taskpaper"]
+	path = bundle/taskpaper
+	url = git://github.com/vim-scripts/taskpaper.vim.git
+[submodule "bundle/conqueterm"]
+	path = bundle/conqueterm
+	url = git://github.com/vim-scripts/Conque-Shell.git
+[submodule "bundle/hexHighlight"]
+	path = bundle/hexHighlight
+	url = git://github.com/vim-scripts/hexHighlight.vim.git
+[submodule "bundle/vimball"]
+	path = bundle/vimball
+	url = git://github.com/vim-scripts/Vimball
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = git://github.com/vim-scripts/xmledit.git
