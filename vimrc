@@ -1,6 +1,6 @@
 
-call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
 
 "au BufWritePost *.c,*.cpp,*.h silent! !ctags . &
 "au BufWritePost *.c,*.cpp,*.h TlistUpdate
@@ -80,8 +80,8 @@ hi Pmenu ctermbg=80
 
 set mouse=a
 
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-p>"
+"let g:SuperTabDefaultCompletionType="context"
+"let g:SuperTabContextDefaultCompletionType="<c-x><c-p>"
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
