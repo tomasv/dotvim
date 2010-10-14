@@ -44,7 +44,7 @@ map <M-Left> :bp<CR>
 map <M-Right> :bn<CR>
 
 " make popup completion behave more humane
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 
@@ -91,8 +91,6 @@ map t :ToggleWord<CR>
 " FuzzyFinder settings
 map <silent> <C-f> :FufFile<CR>
 map <silent> <M-f> :FufCoverageFile<CR>
-
-
 
 " SuperTab settings
 let g:SuperTabDefaultCompletionType="context"
