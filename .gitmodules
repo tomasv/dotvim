@@ -1,6 +1,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
+	url = git://github.com/tpope/vim-fugitive.git
 [submodule "bundle/tComment"]
 	path = bundle/tComment
 	url = git://github.com/vim-scripts/tComment.git
@@ -75,10 +75,10 @@
 	url = git://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/snipmate-git"]
 	path = bundle/snipmate-git
-	url = http://github.com/msanders/snipmate.vim.git
+	url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = http://github.com/ervandew/supertab.git
+	url = git://github.com/ervandew/supertab.git
 [submodule "bundle/endwise"]
 	path = bundle/endwise
-	url = http://github.com/tpope/vim-endwise.git
+	url = git://github.com/tpope/vim-endwise.git
