@@ -4,9 +4,6 @@
 [submodule "bundle/tComment"]
 	path = bundle/tComment
 	url = git://github.com/vim-scripts/tComment.git
-[submodule "bundle/SuperTab"]
-	path = bundle/SuperTab
-	url = git://github.com/vim-scripts/SuperTab.git
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/vim-scripts/rails.vim.git
