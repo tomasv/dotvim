@@ -25,9 +25,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/vim-scripts/surround.vim.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/vim-scripts/snipMate.git
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = git://github.com/vim-scripts/unimpaired.vim.git
