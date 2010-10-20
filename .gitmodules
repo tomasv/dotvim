@@ -36,7 +36,7 @@
 	url = git://github.com/vim-scripts/css.vim.git
 [submodule "bundle/javacomplete"]
 	path = bundle/javacomplete
-	url = git://github.com/vim-scripts/javacomplete.git
+	url = http://github.com/VictorDenisov/javacomplete.git
 [submodule "bundle/taskpaper"]
 	path = bundle/taskpaper
 	url = git://github.com/vim-scripts/taskpaper.vim.git
