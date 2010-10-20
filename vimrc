@@ -95,3 +95,6 @@ map <silent> <M-f> :FufCoverageFile<CR>
 " SuperTab settings
 let g:SuperTabDefaultCompletionType="context"
 "let g:SuperTabContextDefaultCompletionType="<c-x><c-p>"
+
+" javacomplete settings
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
