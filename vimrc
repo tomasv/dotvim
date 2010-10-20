@@ -52,7 +52,7 @@ inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 let loaded_minibufexplorer = 1
 
 " delimitMate settings
-"let loaded_delimitMate = 1
+let loaded_delimitMate = 1
 let delimitMate_expand_cr = 0
 let delimitMate_expand_space = 0
 let delimitMate_balanced_matchpairs = 1
