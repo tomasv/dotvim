@@ -1,5 +1,5 @@
-set gfn=Monospace\ 8
+set gfn=Monaco\ 8
 set guioptions=aige
 
 set cul
-colorscheme satori
+colorscheme pf_earth
