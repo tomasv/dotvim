@@ -100,3 +100,6 @@
 [submodule "bundle/javacomplete-vd"]
 	path = bundle/javacomplete-vd
 	url = git://github.com/VictorDenisov/javacomplete
+[submodule "bundle/smarthomekey"]
+	path = bundle/smarthomekey
+	url = git://github.com/vim-scripts/Smart-Home-Key.git

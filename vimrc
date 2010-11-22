@@ -51,6 +51,9 @@ inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 " miniBufExpl settings
 let loaded_minibufexplorer = 1
 
+" smart home key settings
+map <Home> :SmartHomeKey<CR>
+
 " delimitMate settings
 let loaded_delimitMate = 1
 let delimitMate_expand_cr = 0
