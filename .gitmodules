@@ -103,3 +103,6 @@
 [submodule "bundle/smarthomekey"]
 	path = bundle/smarthomekey
 	url = git://github.com/vim-scripts/Smart-Home-Key.git
+[submodule "bundle/camelcasemotion"]
+	path = bundle/camelcasemotion
+	url = http://github.com/vim-scripts/camelcasemotion.git
