@@ -28,9 +28,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git://github.com/vim-scripts/delimitMate.vim.git
-[submodule "bundle/css"]
-	path = bundle/css
-	url = git://github.com/vim-scripts/css.vim.git
 [submodule "bundle/taskpaper"]
 	path = bundle/taskpaper
 	url = git://github.com/vim-scripts/taskpaper.vim.git
