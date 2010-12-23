@@ -3,6 +3,8 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 " VIM settings
+set hidden
+set backupdir=~/.vim/backup
 set wildmenu wildmode=full
 set completeopt=longest,menuone
 set laststatus=2
@@ -90,15 +92,17 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 " ToggleWord settings
-map t :ToggleWord<CR>
+map <Leader>t :ToggleWord<CR>
 
 " FuzzyFinder settings
-map <silent> <C-f> :FufFile<CR>
-map <silent> <M-f> :FufCoverageFile<CR>
+" map <silent> <C-f> :FufFile<CR>
+" map <silent> <M-f> :FufCoverageFile<CR>
 
 " SuperTab settings
 let g:SuperTabDefaultCompletionType="context"
-"let g:SuperTabContextDefaultCompletionType="<c-x><c-p>"
-
+let g:SuperTabCompletionContexts = ['s:ContextText']
+let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-p>"
+let g:SuperTabLongestEnhanced = 1
 " javacomplete settings
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
