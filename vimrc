@@ -70,6 +70,10 @@ inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 map <silent> <Home> :SmartHomeKey<CR>
 imap <silent> <Home> <C-O>:SmartHomeKey<CR>
 
+" ctrlp settings
+nmap <Leader>o :CtrlP<CR>
+let g:ctrlp_use_caching = 0
+
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
 
@@ -82,13 +86,6 @@ vmap { s{
 vmap } s}
 vmap # s#
 nmap s ys
-
-" Command-T settings
-nmap <Leader>o :CommandTFlush<CR>:CommandT<CR>
-let g:CommandTSelectPrevMap=['<C-p>', '<C-k>', '<Esc>OA', '<Up>']
-let g:CommandTMaxHeight = 15
-let g:CommandTMatchWindowAtTop = 0
-
 
 " Fugitive settings
 map <Leader>gs :Gstatus<CR>
