@@ -16,9 +16,6 @@
 [submodule "bundle/Smart-Home-Key"]
 	path = bundle/Smart-Home-Key
 	url = https://github.com/vim-scripts/Smart-Home-Key.git
-[submodule "bundle/fugitive.vim"]
-	path = bundle/fugitive.vim
-	url = https://github.com/vim-scripts/fugitive.vim.git
 [submodule "bundle/tComment"]
 	path = bundle/tComment
 	url = git://github.com/vim-scripts/tComment.git
@@ -55,3 +52,6 @@
 [submodule "bundle/The-NERD-tree"]
 	path = bundle/The-NERD-tree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
