@@ -45,7 +45,7 @@
 	url = https://github.com/vim-scripts/ZenCoding.vim.git
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
-	url = https://github.com/bbommarito/vim-slim.git
+	url = https://github.com/slim-template/vim-slim
 [submodule "bundle/matchit.zip"]
 	path = bundle/matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip.git
