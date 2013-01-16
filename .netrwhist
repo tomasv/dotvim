@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/etc/bumblebee'
+let g:netrw_dirhist_2='/home/tomas/.rvm/gems/ruby-1.9.3-head/gems/selenium-webdriver-2.7.0'
+let g:netrw_dirhist_3='/home/tomas/apicurus'
+let g:netrw_dirhist_4='/home/tomas/.rvm/gems/ruby-1.9.3-rc1/gems/rspec-rails-2.6.1/lib'
+let g:netrw_dirhist_5='/home/tomas/active_imp'
+let g:netrw_dirhist_6='/home/tomas/.vim/bundle/Handlebars'
+let g:netrw_dirhist_7='/home/tomas/.vim/bundle/tComment'

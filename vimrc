@@ -1,8 +1,22 @@
-" Load plugins
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
+colorscheme 256-jungle
 
 " VIM settings
+set nocompatible
+set notimeout
+set ttimeout
+set timeoutlen=100
+
+set directory=~/.vim/swp
+set path+=./lib,./spec
+set shell=/bin/sh
+set swb=useopen
+set background=light
+set tags+=tags;/,./gems.tags;/,gems.tags;/
 set hidden
 set backupdir=~/.vim/backup
 set wildmenu wildmode=full
@@ -11,25 +25,20 @@ set laststatus=2
 set statusline=%<%f\ %([%Y%M%R%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
 set number
 set numberwidth=3
-set acd
+set noacd
 set showcmd
 set tabstop=4
 set shiftwidth=4
 set noea
 set mouse=a
-set t_ku=OA
-set t_kd=OB
-set t_kr=OC
-set t_kl=OD
-syntax on
-filetype plugin indent on
+set wildignore=*.png,*.jpg,*.xcf,*.wav
 
 " Custom highlighting
 hi link TagListFileName Normal
 hi Pmenu ctermbg=84
 
-" ObjC settings
-au BufRead,BufNewFile *.m setfiletype objc
+" CoffeeScript settings
+au FileType coffee setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " My mappings
 map <C-h> <C-w>h
@@ -42,30 +51,27 @@ noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
 noremap <C-Right> <C-W>l
 
-map <M-Left> :bp<CR>
-map <M-Right> :bn<CR>
+nmap ]t :tnext<CR>
+nmap [t :tprev<CR>
+
+nmap <Leader>vv :e ~/.vimrc<CR>
+nmap <Leader>vg :e ~/.gvimrc<CR>
+
+nnoremap <Leader>cd :cd %:p:h<CR>
+
+cmap w!! %!sudo tee > /dev/null %
 
 " make popup completion behave more humane
 " inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 
-" miniBufExpl settings
-let loaded_minibufexplorer = 1
-
 " smart home key settings
 map <silent> <Home> :SmartHomeKey<CR>
 imap <silent> <Home> <C-O>:SmartHomeKey<CR>
 
-" delimitMate settings
-let loaded_delimitMate = 1
-let delimitMate_expand_cr = 0
-let delimitMate_expand_space = 0
-let delimitMate_balanced_matchpairs = 1
-let delimitMate_smart_quotes = 1
-
 " NERD Tree settings
-map <F12> :NERDTreeToggle<CR>
+map <F12> :e %:p:h<CR>
 
 " surround settings
 vmap ) s)
@@ -75,34 +81,22 @@ vmap ' s'
 vmap { s{
 vmap } s}
 vmap # s#
+nmap s ys
 
 " Command-T settings
-map <A-t> :CommandT<CR>
+nmap <Leader>o :CommandTFlush<CR>:CommandT<CR>
+let g:CommandTSelectPrevMap=['<C-p>', '<C-k>', '<Esc>OA', '<Up>']
+let g:CommandTMaxHeight = 15
+let g:CommandTMatchWindowAtTop = 0
+
 
 " Fugitive settings
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gb :Gblame<CR>
+map <Leader>gd :Gdiff<CR>
 
-" Ruby/Rails settings
+" Ruby settings
+au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
 autocmd FileType ruby,eruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:surround_35 = "#{\r}"
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
-" ToggleWord settings
-map <Leader>t :ToggleWord<CR>
-
-" FuzzyFinder settings
-" map <silent> <C-f> :FufFile<CR>
-" map <silent> <M-f> :FufCoverageFile<CR>
-
-" SuperTab settings
-let g:SuperTabDefaultCompletionType="context"
-let g:SuperTabCompletionContexts = ['s:ContextText']
-let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-p>"
-let g:SuperTabLongestEnhanced = 1
-" javacomplete settings
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete

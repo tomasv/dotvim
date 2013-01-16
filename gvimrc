@@ -1,5 +1,6 @@
-set gfn=Monaco\ 8
-set guioptions=aige
+set gfn=Monaco\ 10
+set guioptions=aigemt
 
-set cul
-colorscheme pf_earth
+" set cul
+set background=light
+colorscheme molokai
