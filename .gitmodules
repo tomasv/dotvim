@@ -61,3 +61,6 @@
 [submodule "bundle/a"]
 	path = bundle/a
 	url = https://github.com/vim-scripts/a.vim
+[submodule "bundle/vim-scmdiff"]
+	path = bundle/vim-scmdiff
+	url = https://github.com/tomasv/vim-scmdiff
