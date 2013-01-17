@@ -10,6 +10,7 @@ set nocompatible
 set notimeout
 set ttimeout
 set timeoutlen=100
+set updatetime=1000
 
 set directory=~/.vim/swp
 set path+=./lib,./spec
