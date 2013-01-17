@@ -47,6 +47,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+map <Leader>rr :exe '!zeus test -l ' . line('.') . ' %'<CR>
+
 noremap <C-Down>  <C-W>j
 noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
