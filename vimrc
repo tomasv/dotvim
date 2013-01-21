@@ -54,6 +54,8 @@ noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
 noremap <C-Right> <C-W>l
 
+nnoremap gp `[v`]
+
 nmap ]t :tnext<CR>
 nmap [t :tprev<CR>
 
@@ -83,7 +85,7 @@ map <F12> :e %:p:h<CR>
 " surround settings
 vmap ) s)
 vmap ( s(
-vmap " s"
+" vmap " s"
 vmap ' s'
 vmap { s{
 vmap } s}
