@@ -64,3 +64,6 @@
 [submodule "bundle/vim-scmdiff"]
 	path = bundle/vim-scmdiff
 	url = https://github.com/tomasv/vim-scmdiff
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = https://github.com/briancollins/vim-jst
