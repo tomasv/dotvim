@@ -109,10 +109,10 @@ vmap # s#
 nmap s ys
 
 " Fugitive settings
-map <Leader>gs :Gstatus<CR>
-map <Leader>gc :Gcommit<CR>
-map <Leader>gb :Gblame<CR>
-map <Leader>gd :Gdiff<CR>
+" map <Leader>gs :Gstatus<CR>
+" map <Leader>gc :Gcommit<CR>
+" map <Leader>gb :Gblame<CR>
+" map <Leader>gd :Gdiff<CR>
 
 " Ruby settings
 au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
