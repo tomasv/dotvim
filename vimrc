@@ -32,7 +32,7 @@ set tabstop=4
 set shiftwidth=4
 set noea
 set mouse=a
-set wildignore=*.png,*.jpg,*.xcf,*.wav
+set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
 
 " Custom highlighting
 hi link TagListFileName Normal
@@ -59,7 +59,7 @@ function FindWithVimGrep()
 endfunction
 
 function s:VimGrep(word)
-	exe 'vimgrep ' . a:word . ' **/*'
+	exe 'silent! vimgrep ' . a:word . ' **/*'
 endfunction
 
 map <Leader>gg :call FindWithVimGrep()<CR>
@@ -84,16 +84,20 @@ cmap w!! %!sudo tee > /dev/null %
 
 " make popup completion behave more humane
 " inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+" inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+" inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 
 " smart home key settings
 map <silent> <Home> :SmartHomeKey<CR>
 imap <silent> <Home> <C-O>:SmartHomeKey<CR>
 
+" zencoding settings
+let g:user_zen_leader_key = '<c-g>'
+
 " ctrlp settings
 nmap <Leader>o :CtrlP<CR>
 let g:ctrlp_use_caching = 0
+let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|coverage)$' }
 
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
