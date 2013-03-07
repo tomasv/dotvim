@@ -96,6 +96,7 @@ let g:user_zen_leader_key = '<c-g>'
 
 " ctrlp settings
 nmap <Leader>o :CtrlP<CR>
+nmap <Leader>b :CtrlPBuffer<CR>
 let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|coverage)$' }
 
