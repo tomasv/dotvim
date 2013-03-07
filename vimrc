@@ -12,14 +12,14 @@ set ttimeout
 set timeoutlen=100
 set updatetime=1000
 
-set directory=~/.vim/swp
+set directory=~/.vim/swp//
 set path+=./lib,./spec
 set shell=/bin/sh
 set swb=useopen
 set background=light
 set tags+=tags;/,./gems.tags;/,gems.tags;/
 set hidden
-set backupdir=~/.vim/backup
+set backupdir=~/.vim/backup//
 set wildmenu wildmode=full
 set completeopt=longest,menuone
 set laststatus=2
