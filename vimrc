@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 
 colorscheme 256-jungle
+hi clear SignColumn " for gitgutter, nicer looking sign column
 
 " VIM settings
 set nocompatible
