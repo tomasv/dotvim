@@ -102,6 +102,9 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|coverage)$' }
 let g:ctrlp_reuse_window = 'NERD'
 
+" ag.vim setting
+let g:agprg='ag --column --ignore-dir log --ignore-dir tmp'
+
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
 
