@@ -48,7 +48,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-map <Leader>rr :exe '!zeus test -l ' . line('.') . ' %'<CR>
+map <Leader>rr :exe '!spring rspec -l ' . line('.') . ' %'<CR>
 
 function FindCurrentWordWithVimGrep()
 	call s:VimGrep('<cword>')
