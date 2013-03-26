@@ -48,7 +48,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-map <Leader>rr :exe '!spring rspec -l ' . line('.') . ' %'<CR>
+map <Leader>rs :exe '!spring rspec -l ' . line('.') . ' %'<CR>
 
 function FindCurrentWordWithVimGrep()
 	call s:VimGrep('<cword>')
@@ -104,6 +104,22 @@ let g:ctrlp_reuse_window = 'NERD'
 
 " ag.vim setting
 let g:agprg='ag --column --ignore-dir log --ignore-dir tmp'
+
+" ruby refactoring mappings
+
+let g:ruby_refactoring_map_keys = 0
+nnoremap <leader>rap  :RAddParameter<cr>
+nnoremap <leader>rapn :RAddParameterNB<cr>
+nnoremap <leader>rit  :RInlineTemp<cr>
+nnoremap <leader>rel  :RExtractLet<cr>
+nnoremap <leader>rc :RConvertPostConditional<cr>
+nnoremap <leader>riv  :RIntroduceVariable<cr>
+
+vnoremap <leader>rec  :RExtractConstant<cr>
+vnoremap <leader>relv :RExtractLocalVariable<cr>
+vnoremap <leader>rrlv :RRenameLocalVariable<cr>
+vnoremap <leader>rriv :RRenameInstanceVariable<cr>
+vnoremap <leader>rem  :RExtractMethod<cr>
 
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
