@@ -35,6 +35,9 @@ set noea
 set mouse=a
 set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
 
+let mapleader=','
+noremap ; :
+
 " Custom highlighting
 hi link TagListFileName Normal
 hi Pmenu ctermbg=84
