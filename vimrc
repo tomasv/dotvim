@@ -84,8 +84,6 @@ nmap <Leader>vg :e ~/.gvimrc<CR>
 
 nnoremap <Leader>cd :cd %:p:h<CR>
 
-cmap w!! %!sudo tee > /dev/null %
-
 " make popup completion behave more humane
 " inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
