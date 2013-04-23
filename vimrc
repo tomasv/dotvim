@@ -102,6 +102,10 @@ nmap <Leader>b :CtrlPBuffer<CR>
 let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|coverage)$' }
 let g:ctrlp_reuse_window = 'NERD'
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
+    \ 'CreateNewFile()':      []
+    \ }
 
 " ag.vim setting
 let g:agprg='ag --column --ignore-dir log --ignore-dir tmp'
