@@ -14,6 +14,9 @@ set timeoutlen=100
 set updatetime=1000
 
 set directory=~/.vim/swp//
+set undodir=~/.vim/undo//
+set undofile
+set noswapfile
 set path+=./lib,./spec
 set shell=/bin/sh
 set swb=useopen
