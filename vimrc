@@ -131,6 +131,7 @@ vnoremap <leader>rem  :RExtractMethod<cr>
 
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
+map <leader>n :e %:p:h<CR>
 
 " surround settings
 vmap ) s)
