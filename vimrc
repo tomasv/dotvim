@@ -111,7 +111,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 " ag.vim setting
-let g:agprg='ag --column --ignore-dir log --ignore-dir tmp'
+let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir tmp'
 
 " ruby refactoring mappings
 
