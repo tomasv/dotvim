@@ -56,22 +56,6 @@ map <C-l> <C-w>l
 
 map <Leader>rs :exe '!spring rspec -l ' . line('.') . ' %'<CR>
 
-function FindCurrentWordWithVimGrep()
-	call s:VimGrep('<cword>')
-endfunction
-
-function FindWithVimGrep()
-	let term = input('Enter search term: ')
-	call s:VimGrep(term)
-endfunction
-
-function s:VimGrep(word)
-	exe 'silent! vimgrep ' . a:word . ' **/*'
-endfunction
-
-map <Leader>gg :call FindWithVimGrep()<CR>
-map <Leader>gw :call FindCurrentWordWithVimGrep()<CR>
-
 noremap <C-Down>  <C-W>j
 noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
