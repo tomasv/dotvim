@@ -85,3 +85,6 @@
 [submodule "bundle/html5.vim"]
 	path = bundle/html5.vim
 	url = https://github.com/othree/html5.vim
+[submodule "bundle/StripWhiteSpaces"]
+	path = bundle/StripWhiteSpaces
+	url = https://github.com/gagoar/StripWhiteSpaces
