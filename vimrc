@@ -40,6 +40,7 @@ set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
 
 let mapleader=','
 noremap ; :
+noremap Y y$
 
 " Custom highlighting
 hi link TagListFileName Normal
