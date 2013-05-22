@@ -81,6 +81,10 @@ nnoremap <Leader>cd :cd %:p:h<CR>
 map <silent> <Home> :SmartHomeKey<CR>
 imap <silent> <Home> <C-O>:SmartHomeKey<CR>
 
+" ruby hash
+noremap <Leader>rh :Hashrockets<CR>
+noremap <Leader>rb :Bashrockets<CR>
+
 " zencoding settings
 let g:user_zen_leader_key = '<c-g>'
 
