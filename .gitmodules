@@ -91,3 +91,6 @@
 [submodule "bundle/ruby_bashrockets.vim"]
 	path = bundle/ruby_bashrockets.vim
 	url = https://github.com/danchoi/ruby_bashrockets.vim
+[submodule "bundle/vim-emblem"]
+	path = bundle/vim-emblem
+	url = https://github.com/heartsentwined/vim-emblem
