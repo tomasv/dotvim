@@ -55,8 +55,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-map <Leader>rs :exe '!spring rspec -l ' . line('.') . ' %'<CR>
-
 noremap <C-Down>  <C-W>j
 noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
@@ -76,6 +74,12 @@ nnoremap <Leader>cd :cd %:p:h<CR>
 " inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 " inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+
+" ruby-rspec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>rs :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+let g:rspec_command = "!spring rspec {spec}"
 
 " smart home key settings
 map <silent> <Home> :SmartHomeKey<CR>
