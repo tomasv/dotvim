@@ -144,7 +144,7 @@ nmap s ys
 
 " Ruby settings
 au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
-autocmd FileType ruby,eruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " JST settings
 autocmd FileType jst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
