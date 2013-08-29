@@ -3,7 +3,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-colorscheme 256-jungle
+colorscheme molokai
 hi clear SignColumn " for gitgutter, nicer looking sign column
 
 " VIM settings
@@ -13,6 +13,9 @@ set ttimeout
 set timeoutlen=100
 set updatetime=1000
 
+set autoread
+set clipboard=unnamed
+set ignorecase smartcase
 set directory=~/.vim/swp//
 set undodir=~/.vim/undo//
 set undofile
