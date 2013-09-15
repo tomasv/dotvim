@@ -152,3 +152,8 @@ autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 s
 " JST settings
 autocmd FileType jst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
+" UltiSnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+

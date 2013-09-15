@@ -1,0 +1,83 @@
+snippet re
+require '${1}'
+endsnippet
+
+snippet cl
+class ${1}
+  ${2}
+end
+endsnippet
+
+snippet mod
+module ${1}
+  ${2}
+end
+endsnippet
+
+snippet utf
+# encoding: UTF-8
+endsnippet
+
+snippet enc
+# encoding: UTF-8
+endsnippet
+
+snippet ea
+.each { |${1:elem}| ${2} }
+endsnippet
+
+snippet des
+describe '${1}' do
+  ${2}
+end
+endsnippet
+
+snippet desc
+describe ${1:class_name} do
+  ${2}
+end
+endsnippet
+
+snippet it
+it '${1:spec_name}' do
+  ${2}
+end
+endsnippet
+
+snippet con
+context '${1:message}' do
+  ${2}
+end
+endsnippet
+
+snippet bef
+before do
+  ${1}
+end${2}
+endsnippet
+
+snippet aft
+after do
+  ${1}
+end${2}
+endsnippet
+
+snippet ex
+expect { ${1} }.to${2}
+endsnippet
+
+snippet cr
+create(:${1:factory})
+endsnippet
+
+snippet bu
+build(:${1:factory})
+endsnippet
+
+snippet let
+let(:${1:name}) { ${2} }
+endsnippet
+
+snippet let!
+let!(:${1:name}) { ${2} }
+endsnippet
