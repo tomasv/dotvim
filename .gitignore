@@ -1,3 +1,4 @@
 *.swp
 undo/*
 .netrwhist
+vimrc.local
