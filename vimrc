@@ -82,8 +82,8 @@ nnoremap <Leader>a :A<CR>
 
 " ruby-rspec
 map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>rs :call RunNearestSpec()<CR>
-map <Leader>s :call RunAllSpecs()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>rs :call RunAllSpecs()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 let g:rspec_command = "!zeus test -f d {spec}"
 
