@@ -74,16 +74,11 @@ nmap [t :tprev<CR>
 nmap <Leader>vv :e ~/.vimrc<CR>
 nmap <Leader>vg :e ~/.gvimrc<CR>
 
-nnoremap <Leader>cd :cd %:p:h<CR>
-
-" make popup completion behave more humane
-" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-" inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-
+" alternate mappings
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
 
+" rails mappings
 nnoremap <Leader>rm :Rmodel<Space>
 nnoremap <Leader>rc :Rcontroller<Space>
 nnoremap <Leader>rg :Rgenerate<Space>
