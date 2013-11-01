@@ -79,6 +79,14 @@ nnoremap <Leader>cd :cd %:p:h<CR>
 " inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 
 nnoremap <Leader>a :A<CR>
+nnoremap <Leader>va :AV<CR>
+
+nnoremap <Leader>rm :Rmodel<Space>
+nnoremap <Leader>rc :Rcontroller<Space>
+nnoremap <Leader>rg :Rgenerate<Space>
+nnoremap <Leader>rj :Rjavascript<Space>
+nnoremap <Leader>rv :Rview<Space>
+nnoremap <Leader>ra :Rake<Space>
 
 " ruby-rspec
 map <Leader>t :call RunCurrentSpecFile()<CR>
@@ -111,22 +119,6 @@ let g:ctrlp_prompt_mappings = {
 
 " ag.vim setting
 let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir tmp --ignore-dir solr'
-
-" ruby refactoring mappings
-
-let g:ruby_refactoring_map_keys = 0
-nnoremap <leader>rap  :RAddParameter<cr>
-nnoremap <leader>rapn :RAddParameterNB<cr>
-nnoremap <leader>rit  :RInlineTemp<cr>
-nnoremap <leader>rel  :RExtractLet<cr>
-nnoremap <leader>rc :RConvertPostConditional<cr>
-nnoremap <leader>riv  :RIntroduceVariable<cr>
-
-vnoremap <leader>rec  :RExtractConstant<cr>
-vnoremap <leader>relv :RExtractLocalVariable<cr>
-vnoremap <leader>rrlv :RRenameLocalVariable<cr>
-vnoremap <leader>rriv :RRenameInstanceVariable<cr>
-vnoremap <leader>rem  :RExtractMethod<cr>
 
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
