@@ -46,6 +46,8 @@ noremap ; :
 noremap Y y$
 noremap Q <nop>
 
+nnoremap <Leader>w :w<CR>
+
 " Custom highlighting
 hi link TagListFileName Normal
 hi Pmenu ctermbg=84
