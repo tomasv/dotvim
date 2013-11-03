@@ -48,6 +48,9 @@ noremap Q <nop>
 
 nnoremap <Leader>w :w<CR>
 
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
+
 " Custom highlighting
 hi link TagListFileName Normal
 hi Pmenu ctermbg=84
