@@ -40,6 +40,7 @@ set shiftwidth=4
 set noea
 set mouse=a
 set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
+set winwidth=80
 
 let mapleader=','
 noremap ; :
