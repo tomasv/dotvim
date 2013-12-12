@@ -13,6 +13,7 @@ set ttimeout
 set timeoutlen=100
 set updatetime=1000
 
+set bs=2
 set autoread
 set clipboard=unnamed
 set ignorecase smartcase
