@@ -60,6 +60,9 @@ hi Pmenu ctermbg=84
 " CoffeeScript settings
 au FileType coffee setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
+" JavaScript settings
+au FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+
 " My mappings
 map <C-h> <C-w>h
 map <C-j> <C-w>j
