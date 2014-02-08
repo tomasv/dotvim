@@ -161,6 +161,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" gundo settings
+let g:gundo_width = 60
+nnoremap <Leader>u :GundoToggle<CR>
+
 " Local overrides
 if filereadable(expand("~/.vimrc.local"))
 	source ~/.vimrc.local
