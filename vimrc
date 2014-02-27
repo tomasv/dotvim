@@ -42,6 +42,7 @@ set noea
 set mouse=a
 set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
 set winwidth=80
+set cc=99
 
 let mapleader=','
 noremap ; :
@@ -170,3 +171,5 @@ nnoremap <Leader>u :GundoToggle<CR>
 if filereadable(expand("~/.vimrc.local"))
 	source ~/.vimrc.local
 endif
+
+hi ColorColumn ctermbg=0
