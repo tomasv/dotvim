@@ -167,6 +167,9 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:gundo_width = 60
 nnoremap <Leader>u :GundoToggle<CR>
 
+" stripper settings
+let g:StripperIgnoreFileTypes = [ 'markdown', 'liquid', 'txt', 'conf' ]
+
 " Local overrides
 if filereadable(expand("~/.vimrc.local"))
 	source ~/.vimrc.local
