@@ -130,3 +130,6 @@
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "bundle/paredit.vim"]
+	path = bundle/paredit.vim
+	url = https://github.com/vim-scripts/paredit.vim

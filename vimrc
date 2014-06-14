@@ -157,9 +157,12 @@ au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
 autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Clojure settings
-nnoremap <Leader>cr :Require<CR>
+nnoremap cr :Require<CR>
 let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = ['^.*']
+
+" paredit settings
+let g:paredit_leader = '<Space>'
 
 au BufRead *.clj RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
