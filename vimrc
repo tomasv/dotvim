@@ -80,8 +80,8 @@ nnoremap gp `[v`]
 nmap ]t :tnext<CR>
 nmap [t :tprev<CR>
 
-nmap <Leader>vv :e ~/.vimrc<CR>
-nmap <Leader>vg :e ~/.gvimrc<CR>
+nmap <Leader>vv :e ~/.vim/vimrc<CR>
+nmap <Leader>vg :e ~/.vim/gvimrc<CR>
 
 " alternate mappings
 nnoremap <Leader>a :A<CR>
