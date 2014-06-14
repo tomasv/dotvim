@@ -116,8 +116,9 @@ noremap <Leader>rb :Bashrockets<CR>
 let g:user_zen_leader_key = '<c-g>'
 
 " ctrlp settings
-nmap <Leader>o :CtrlP<CR>
-nmap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>m :CtrlPModified<CR>
 let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|coverage|log|public|bin)$' }
 let g:ctrlp_reuse_window = 'NERD'
