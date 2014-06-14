@@ -87,6 +87,8 @@ nmap <Leader>vg :e ~/.vim/gvimrc<CR>
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
 
+nnoremap <Leader>cl :ccl<CR>
+
 " rails mappings
 nnoremap <Leader>rm :Rmodel<Space>
 nnoremap <Leader>rc :Rcontroller<Space>
