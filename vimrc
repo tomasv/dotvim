@@ -129,7 +129,7 @@ let g:ctrlp_prompt_mappings = {
 
 " ag.vim setting
 let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir tmp --ignore-dir solr'
-nnoremap <Leader>* :Ag <cword><CR>
+nnoremap <Leader>* :Ag '<cword>'<CR>
 
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
