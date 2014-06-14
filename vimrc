@@ -134,6 +134,7 @@ nnoremap <Leader>* :Ag '<cword>'<CR>
 " NERD Tree settings
 map <F12> :e %:p:h<CR>
 map <leader>n :e %:p:h<CR>
+let NERDTreeMinimalUI=1
 
 " surround settings
 vmap ) s)
