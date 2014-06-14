@@ -102,7 +102,7 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>rs :call RunAllSpecs()<CR>
 map <Leader>l :call RunLastSpec()<CR>
-let g:rspec_command = "!zeus test -f d {spec}"
+let g:rspec_command = "!spring rspec -c -f d {spec}"
 
 " smart home key settings
 map <silent> <Home> :SmartHomeKey<CR>
