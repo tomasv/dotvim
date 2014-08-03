@@ -84,6 +84,8 @@ nmap [t :tprev<CR>
 nmap <Leader>vv :e ~/.vim/vimrc<CR>
 nmap <Leader>vg :e ~/.vim/gvimrc<CR>
 
+nnoremap <Leader>rd :redraw!<CR>
+
 " alternate mappings
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
