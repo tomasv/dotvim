@@ -127,3 +127,6 @@
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "bundle/vim-sexp"]
+	path = bundle/vim-sexp
+	url = https://github.com/guns/vim-sexp

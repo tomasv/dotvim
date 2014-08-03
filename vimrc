@@ -45,6 +45,7 @@ set winwidth=80
 set cc=99
 
 let mapleader=','
+let maplocalleader=' '
 noremap ; :
 noremap Y y$
 noremap Q <nop>
@@ -163,6 +164,9 @@ let g:clojure_fuzzy_indent_patterns = ['^.*']
 
 " paredit settings
 let g:paredit_leader = '<Space>'
+
+" vim-sexp
+let g:sexp_enable_insert_mode_mappings = 0
 
 au BufRead *.clj RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
