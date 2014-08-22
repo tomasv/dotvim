@@ -109,6 +109,9 @@ map <Leader>rs :call RunAllSpecs()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 let g:rspec_command = "!spring rspec -c -f d {spec}"
 
+command VanillaRspec let g:rspec_command = "!bundle exec rspec -c -f d {spec}"
+command SpringRspec let g:rspec_command = "!spring rspec -c -f d {spec}"
+
 " smart home key settings
 map <silent> <Home> :SmartHomeKey<CR>
 imap <silent> <Home> <C-O>:SmartHomeKey<CR>
