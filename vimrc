@@ -55,6 +55,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 
+autocmd VimResized * :wincmd =
+
 " Custom highlighting
 hi link TagListFileName Normal
 hi Pmenu ctermbg=84
