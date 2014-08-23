@@ -8,10 +8,6 @@ hi clear SignColumn " for gitgutter, nicer looking sign column
 
 " VIM settings
 set nocompatible
-set notimeout
-set ttimeout
-set timeoutlen=100
-set updatetime=1000
 
 set bs=2
 set autoread
@@ -41,7 +37,6 @@ set shiftwidth=4
 set noea
 set mouse=a
 set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
-set winwidth=80
 set cc=99
 
 let mapleader=','
