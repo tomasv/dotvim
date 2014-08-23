@@ -3,37 +3,32 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" colorscheme settings
 colorscheme molokai
 hi clear SignColumn " for gitgutter, nicer looking sign column
+hi ColorColumn ctermbg=0
 
 " VIM settings
 set nocompatible
-
 set bs=2
 set autoread
 set clipboard=unnamed
 set ignorecase smartcase
 set directory=~/.vim/swp//
 set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
 set undofile
 set noswapfile
-set path+=./lib,./spec
-set shell=/bin/sh
 set swb=useopen
-set background=light
+set path+=./lib,./spec
 set tags+=tags;/,./gems.tags;/,gems.tags;/
 set hidden
-set backupdir=~/.vim/backup//
 set wildmenu wildmode=full
 set completeopt=longest,menuone
 set laststatus=2
 set statusline=%<%f\ %([%Y%M%R%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
 set number
 set numberwidth=3
-set noacd
-set showcmd
-set tabstop=4
-set shiftwidth=4
 set noea
 set mouse=a
 set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
@@ -41,14 +36,12 @@ set cc=99
 
 let mapleader=','
 let maplocalleader=' '
+
 noremap ; :
 noremap Y y$
 noremap Q <nop>
 
 nnoremap <Leader>w :w<CR>
-
-nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>a
 
 autocmd VimResized * :wincmd =
 
@@ -135,25 +128,8 @@ let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir external --
 nnoremap <Leader>* :Ag '<cword>'<CR>
 
 " NERD Tree settings
-map <F12> :e %:p:h<CR>
 map <leader>n :e %:p:h<CR>
 let NERDTreeMinimalUI=1
-
-" surround settings
-vmap ) s)
-vmap ( s(
-" vmap " s"
-vmap ' s'
-vmap { s{
-vmap } s}
-vmap # s#
-nmap s ys
-
-" Fugitive settings
-" map <Leader>gs :Gstatus<CR>
-" map <Leader>gc :Gcommit<CR>
-" map <Leader>gb :Gblame<CR>
-" map <Leader>gd :Gdiff<CR>
 
 " Ruby settings
 au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
@@ -164,12 +140,10 @@ nnoremap cr :Require<CR>
 let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = ['^.*']
 
-" paredit settings
-let g:paredit_leader = '<Space>'
-
 " vim-sexp
 let g:sexp_enable_insert_mode_mappings = 0
 
+" rainbow parens
 au BufRead *.clj RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
@@ -210,10 +184,3 @@ nnoremap <Leader>u :GundoToggle<CR>
 
 " stripper settings
 let g:StripperIgnoreFileTypes = [ 'markdown', 'liquid', 'txt', 'conf' ]
-
-" Local overrides
-if filereadable(expand("~/.vimrc.local"))
-	source ~/.vimrc.local
-endif
-
-hi ColorColumn ctermbg=0
