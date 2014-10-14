@@ -115,12 +115,14 @@ let g:user_zen_leader_key = '<c-g>'
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPModified<CR>
-let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|external|doc|coverage|log|public|bin)$' }
+let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
 let g:ctrlp_reuse_window = 'NERD'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
-    \ 'CreateNewFile()':      []
+    \ 'CreateNewFile()':      [],
+    \ 'PrtClearCache()':      ['<c-u>'],
+    \ 'PrtClear()':           []
     \ }
 
 " ag.vim setting

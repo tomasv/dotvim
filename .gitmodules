@@ -133,3 +133,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go
+[submodule "bundle/ctrlp-cmatcher"]
+	path = bundle/ctrlp-cmatcher
+	url = https://github.com/JazzCore/ctrlp-cmatcher
