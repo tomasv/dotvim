@@ -125,6 +125,11 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtClear()':           []
     \ }
 
+" gitgutter settings
+let g:gitgutter_enabled = 0
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
 " ag.vim setting
 let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir external --ignore-dir public --ignore-dir tmp --ignore-dir solr'
 nnoremap <Leader>* :Ag '<cword>'<CR>
