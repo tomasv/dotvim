@@ -32,7 +32,6 @@ set numberwidth=3
 set noea
 set mouse=a
 set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
-set cc=99
 
 let mapleader=','
 let maplocalleader=' '
