@@ -139,3 +139,6 @@
 [submodule "bundle/vim-typedclojure"]
 	path = bundle/vim-typedclojure
 	url = https://github.com/typedclojure/vim-typedclojure
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
