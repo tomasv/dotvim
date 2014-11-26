@@ -136,3 +136,6 @@
 [submodule "bundle/ctrlp-cmatcher"]
 	path = bundle/ctrlp-cmatcher
 	url = https://github.com/JazzCore/ctrlp-cmatcher
+[submodule "bundle/vim-typedclojure"]
+	path = bundle/vim-typedclojure
+	url = https://github.com/typedclojure/vim-typedclojure
