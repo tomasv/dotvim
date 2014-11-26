@@ -153,7 +153,7 @@ let g:clojure_fuzzy_indent_patterns = ['^.*']
 let g:sexp_enable_insert_mode_mappings = 0
 
 " rainbow parens
-au BufRead *.clj RainbowParenthesesActivate
+au BufRead *.clj,*.cljs RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
