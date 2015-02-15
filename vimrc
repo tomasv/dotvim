@@ -101,10 +101,6 @@ command VanillaRspec let g:rspec_command = "!bundle exec rspec -c -f d {spec}"
 command SpringRspec let g:rspec_command = "!spring rspec -c -f d {spec}"
 command SpringRescueRspec let g:rspec_command = "!bundle exec spring rspec --require pry-rescue/rspec -c -f d {spec}"
 
-" smart home key settings
-map <silent> <Home> :SmartHomeKey<CR>
-imap <silent> <Home> <C-O>:SmartHomeKey<CR>
-
 " ruby hash
 noremap <Leader>rh :Hashrockets<CR>
 noremap <Leader>rb :Bashrockets<CR>
@@ -125,11 +121,6 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtClearCache()':      ['<c-u>'],
     \ 'PrtClear()':           []
     \ }
-
-" gitgutter settings
-let g:gitgutter_enabled = 0
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
 
 " ag.vim setting
 let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir external --ignore-dir public --ignore-dir tmp --ignore-dir solr'
@@ -187,10 +178,6 @@ autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" gundo settings
-let g:gundo_width = 60
-nnoremap <Leader>u :GundoToggle<CR>
 
 " stripper settings
 let g:StripperIgnoreFileTypes = [ 'markdown', 'liquid', 'txt', 'conf' ]
