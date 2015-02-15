@@ -6,10 +6,8 @@ filetype plugin indent on
 " colorscheme settings
 colorscheme molokai
 hi clear SignColumn " for gitgutter, nicer looking sign column
-hi ColorColumn ctermbg=0
 
 " VIM settings
-
 set path+=./lib,./spec
 set tags+=tags;/,./gems.tags;/,gems.tags;/
 
@@ -50,7 +48,7 @@ autocmd VimResized * :wincmd =
 
 " Custom highlighting
 hi link TagListFileName Normal
-hi Pmenu ctermbg=84
+hi PmenuSel ctermfg=15
 
 " CoffeeScript settings
 au FileType coffee setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -78,6 +76,9 @@ nmap <Leader>vv :e ~/.vim/vimrc<CR>
 nmap <Leader>vg :e ~/.vim/gvimrc<CR>
 
 nnoremap <Leader>rd :redraw!<CR>
+
+" completion popup behavior tweak
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " alternate mappings
 nnoremap <Leader>a :A<CR>
@@ -185,3 +186,4 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " stripper settings
 let g:StripperNoStripOnSave = 1
+
