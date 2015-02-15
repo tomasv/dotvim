@@ -180,4 +180,5 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " stripper settings
-let g:StripperIgnoreFileTypes = [ 'markdown', 'liquid', 'txt', 'conf' ]
+let g:StripperNoStripOnSave = 1
+" let g:StripperIgnoreFileTypes = [ 'markdown', 'liquid', 'txt', 'conf' ]
