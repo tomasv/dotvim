@@ -9,29 +9,33 @@ hi clear SignColumn " for gitgutter, nicer looking sign column
 hi ColorColumn ctermbg=0
 
 " VIM settings
-set nocompatible
-set bs=2
-set autoread
-set clipboard=unnamed
-set ignorecase smartcase
+
+set path+=./lib,./spec
+set tags+=tags;/,./gems.tags;/,gems.tags;/
+
 set directory=~/.vim/swp//
 set undodir=~/.vim/undo//
 set backupdir=~/.vim/backup//
 set undofile
 set noswapfile
-set swb=useopen
-set path+=./lib,./spec
-set tags+=tags;/,./gems.tags;/,gems.tags;/
+
+set autoread
 set hidden
+
 set wildmenu wildmode=full
 set completeopt=longest,menuone
+set ignorecase smartcase
+set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
+
 set laststatus=2
 set statusline=%<%f\ %([%Y%M%R%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
+
 set number
 set numberwidth=3
-set noea
+set backspace=indent,eol,start
+set clipboard=unnamed
+
 set mouse=a
-set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
 
 let mapleader=','
 let maplocalleader=' '
@@ -181,4 +185,3 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " stripper settings
 let g:StripperNoStripOnSave = 1
-" let g:StripperIgnoreFileTypes = [ 'markdown', 'liquid', 'txt', 'conf' ]
