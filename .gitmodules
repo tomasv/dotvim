@@ -142,3 +142,12 @@
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule "bundle/vim-test"]
+	path = bundle/vim-test
+	url = https://github.com/janko-m/vim-test
+[submodule "bundle/neoterm"]
+	path = bundle/neoterm
+	url = https://github.com/kassio/neoterm
