@@ -7,7 +7,7 @@ expect(${1}).to ${2}
 endsnippet
 
 snippet succ
-expect(response).to be_success
+${1:is_expected}.to have_http_status(:success)
 endsnippet
 
 snippet as
