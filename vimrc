@@ -1,3 +1,5 @@
+let g:python_host_prog='/usr/local/bin/python2.7'
+
 execute pathogen#infect()
 
 syntax on
@@ -31,7 +33,10 @@ set statusline=%<%f\ %([%Y%M%R%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
 set number
 set numberwidth=3
 set backspace=indent,eol,start
-set clipboard=unnamed
+
+if has('nvim') == 0
+	set clipboard=unnamed
+endif
 
 set mouse=a
 
@@ -41,6 +46,10 @@ let maplocalleader=' '
 noremap ; :
 noremap Y y$
 noremap Q <nop>
+
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+endif
 
 nnoremap <Leader>w :w<CR>
 
@@ -94,11 +103,24 @@ nnoremap <Leader>rj :Rjavascript<Space>
 nnoremap <Leader>rv :Rview<Space>
 nnoremap <Leader>ra :Rake<Space>
 
-" ruby-rspec
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>rs :call RunAllSpecs()<CR>
-map <Leader>l :call RunLastSpec()<CR>
+if has('nvim')
+	let test#strategy = "neoterm"
+	let test#ruby#rspec#options = {
+				\ 'nearest': '-c -f d --backtrace',
+				\ 'file':    '-c -f d',
+				\}
+	" let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
+	let g:neoterm_position = 'vertical'
+	nmap <silent> <leader>t :TestFile<CR>
+	nmap <silent> <leader>s :TestNearest<CR>
+	nmap <silent> <leader>l :TestLast<CR>
+else
+	" ruby-rspec
+	map <Leader>t :call RunCurrentSpecFile()<CR>
+	map <Leader>s :call RunNearestSpec()<CR>
+	map <Leader>rs :call RunAllSpecs()<CR>
+	map <Leader>l :call RunLastSpec()<CR>
+endif
 
 let g:rspec_command = "!bundle exec spring rspec -c -f d {spec}"
 
@@ -118,7 +140,9 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPModified<CR>
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|external|doc|coverage|log|public|bin)$' }
-let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
+if has('nvim') == 0
+	let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
+endif
 let g:ctrlp_reuse_window = 'NERD'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
