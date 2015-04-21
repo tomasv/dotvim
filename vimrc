@@ -39,7 +39,7 @@ set number
 set numberwidth=3
 set backspace=indent,eol,start
 
-if has('nvim') == 0
+if !has('nvim')
 	set clipboard=unnamed
 endif
 
@@ -145,7 +145,7 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPModified<CR>
 let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|external|doc|coverage|log|public|bin)$' }
-if has('nvim') == 0
+if !has('nvim')
 	let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
 endif
 let g:ctrlp_reuse_window = 'NERD'
