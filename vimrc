@@ -38,11 +38,7 @@ set statusline=%<%f\ %([%Y%M%R%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
 set number
 set numberwidth=3
 set backspace=indent,eol,start
-
-if !has('nvim')
-	set clipboard=unnamed
-endif
-
+set clipboard=unnamed
 set mouse=a
 
 let mapleader=','
