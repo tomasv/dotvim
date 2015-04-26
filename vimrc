@@ -155,9 +155,14 @@ let g:ctrlp_prompt_mappings = {
 
 " ag.vim setting
 let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir external --ignore-dir public --ignore-dir tmp --ignore-dir solr'
+
+nnoremap K :Ag '<cword>'<CR>
+nnoremap <c-k> :Ag '<cWORD>'<CR>
+
 nnoremap <Leader>* :Ag '<cword>'<CR>
 nnoremap <Leader>W* :Ag '<cWORD>'<CR>
-vnoremap <Leader>* "xy:Ag '<c-r>x'<CR>
+
+vnoremap K "xy:Ag '<c-r>x'<CR>
 
 " NERD Tree settings
 map <leader>n :e %:p:h<CR>
