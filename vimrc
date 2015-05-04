@@ -30,7 +30,7 @@ set hidden
 set wildmenu wildmode=full
 set completeopt=longest,menuone
 set ignorecase smartcase
-set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*
+set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*,*.gif,*.svg
 
 set laststatus=2
 set statusline=%<%f\ %([%Y%M%R%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
