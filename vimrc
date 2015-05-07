@@ -107,7 +107,11 @@ nnoremap <Leader>ra :Rake<Space>
 if has('nvim')
 	let test#strategy = "neoterm"
 	let test#ruby#rspec#options = {
-				\ 'nearest': '-c -f d --backtrace',
+				\ 'nearest': '-c -f d',
+				\ 'file':    '-c -f d',
+				\}
+	let test#ruby#rspec#options = {
+				\ 'nearest': '-c -f d',
 				\ 'file':    '-c -f d',
 				\}
 	" let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
