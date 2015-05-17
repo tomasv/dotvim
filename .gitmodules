@@ -151,3 +151,6 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/rust-lang/rust.vim
