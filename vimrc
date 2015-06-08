@@ -97,11 +97,11 @@ nnoremap <Leader>va :AV<CR>
 nnoremap <Leader>cl :ccl<CR>
 
 " rails mappings
-nnoremap <Leader>rm :Rmodel<Space>
-nnoremap <Leader>rc :Rcontroller<Space>
-nnoremap <Leader>rg :Rgenerate<Space>
-nnoremap <Leader>rj :Rjavascript<Space>
-nnoremap <Leader>rv :Rview<Space>
+nnoremap <Leader>rm :Emodel<Space>
+nnoremap <Leader>rc :Econtroller<Space>
+nnoremap <Leader>rg :Egenerate<Space>
+nnoremap <Leader>rj :Ejavascript<Space>
+nnoremap <Leader>rv :Eview<Space>
 nnoremap <Leader>ra :Rake<Space>
 
 if has('nvim')
