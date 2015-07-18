@@ -107,12 +107,12 @@ nnoremap <Leader>ra :Rake<Space>
 if has('nvim')
 	let test#strategy = "neoterm"
 	let test#ruby#rspec#options = {
-				\ 'nearest': '-c -f d',
-				\ 'file':    '-c -f d',
+				\ 'nearest': '-c --no-profile',
+				\ 'file':    '-c --no-profile',
 				\}
 	let test#ruby#rspec#options = {
-				\ 'nearest': '-c -f d',
-				\ 'file':    '-c -f d',
+				\ 'nearest': '-c --no-profile',
+				\ 'file':    '-c --no-profile',
 				\}
 	" let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
 	let g:neoterm_position = 'vertical'
@@ -127,11 +127,11 @@ else
 	map <Leader>l :call RunLastSpec()<CR>
 endif
 
-let g:rspec_command = "!bundle exec spring rspec -c -f d {spec}"
+let g:rspec_command = "!bundle exec spring rspec -c --no-profile {spec}"
 
-command VanillaRspec let g:rspec_command = "!bundle exec rspec -c -f d {spec}"
-command SpringRspec let g:rspec_command = "!spring rspec -c -f d {spec}"
-command SpringRescueRspec let g:rspec_command = "!bundle exec spring rspec --require pry-rescue/rspec -c -f d {spec}"
+command VanillaRspec let g:rspec_command = "!bundle exec rspec -c --no-profile {spec}"
+command SpringRspec let g:rspec_command = "!spring rspec -c --no-profile {spec}"
+command SpringRescueRspec let g:rspec_command = "!bundle exec spring rspec --require pry-rescue/rspec --no-profile -c {spec}"
 
 " ruby hash
 noremap <Leader>rh :Hashrockets<CR>
