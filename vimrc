@@ -96,6 +96,8 @@ nnoremap <Leader>va :AV<CR>
 
 nnoremap <Leader>cl :ccl<CR>
 
+nnoremap <Leader>x :buffer NEOTERM<CR>
+
 " rails mappings
 nnoremap <Leader>rm :Emodel<Space>
 nnoremap <Leader>rc :Econtroller<Space>
