@@ -142,6 +142,13 @@ noremap <Leader>rb :Bashrockets<CR>
 " zencoding settings
 let g:user_zen_leader_key = '<c-g>'
 
+" fugitive settings
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gD :diffoff \| q \| Gedit<CR>
+nnoremap <Leader>ge :Gedit<CR>
+nnoremap <Leader>gb :Gblame<CR>
+
 " ctrlp settings
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
