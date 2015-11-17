@@ -41,6 +41,8 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 set mouse=a
 
+set noea
+
 let mapleader=','
 let maplocalleader=' '
 
@@ -54,7 +56,7 @@ endif
 
 nnoremap <Leader>w :w<CR>
 
-autocmd VimResized * :wincmd =
+" autocmd VimResized * :wincmd =
 
 " Custom highlighting
 hi link TagListFileName Normal
