@@ -169,7 +169,8 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 " ag.vim setting
-let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir external --ignore-dir public --ignore-dir tmp --ignore-dir solr'
+
+let g:ag_prg="ag --vimgrep --smart-case --nobreak"
 
 nnoremap K :Ag '<cword>'<CR>
 nnoremap <c-k> :Ag '<cWORD>'<CR>
