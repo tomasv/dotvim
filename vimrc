@@ -110,14 +110,6 @@ nnoremap <Leader>ra :Rake<Space>
 
 if has('nvim')
 	let test#strategy = "neoterm"
-	let test#ruby#rspec#options = {
-				\ 'nearest': '-c --no-profile',
-				\ 'file':    '-c --no-profile',
-				\}
-	let test#ruby#rspec#options = {
-				\ 'nearest': '-c --no-profile',
-				\ 'file':    '-c --no-profile',
-				\}
 	" let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
 	let g:neoterm_position = 'vertical'
 	nmap <silent> <leader>t :TestFile<CR>
