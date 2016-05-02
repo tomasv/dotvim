@@ -22,38 +22,48 @@ snippet enc
 # encoding: UTF-8
 endsnippet
 
-snippet ea
-.each { |${1:elem}| ${2} }
+snippet each "" w
+each { |${1:elem}| $0 }
+endsnippet
+
+snippet map "" w
+map { |${1:elem}| $0 }
 endsnippet
 
 snippet des
 describe '${1}' do
-  ${2}
+  $0
 end
 endsnippet
 
 snippet desc
 describe ${1:class_name} do
-  ${2}
+  $0
 end
 endsnippet
 
 snippet it
 it '${1:spec_name}' do
-  ${2}
+  $0
+end
+endsnippet
+
+snippet spec
+specify '${1}' do
+  $0
 end
 endsnippet
 
 snippet con
 context '${1:message}' do
-  ${2}
+  $0
 end
 endsnippet
 
 snippet bef
 before do
-  ${1}
-end${2}
+  $0
+end
 endsnippet
 
 snippet aft
@@ -64,6 +74,14 @@ endsnippet
 
 snippet ex
 expect { ${1} }.to${2}
+endsnippet
+
+snippet expany
+expect_any_instance_of(${1}).to $0
+endsnippet
+
+snippet allany
+allow_any_instance_of(${1}).to $0
 endsnippet
 
 snippet cr
@@ -80,4 +98,24 @@ endsnippet
 
 snippet let!
 let!(:${1:name}) { ${2} }
+endsnippet
+
+snippet clsfor
+class ${1}
+  def self.${2}(*args)
+    new(*args).run
+  end
+
+  def initialize(${3})
+    ${3/(\w+)(: \{.*\}|: ['"\/\w]+|:)?(, )?/@$1 = $1(?3:\\n    :)/g}
+  end
+
+  def run
+    $0
+  end
+
+  private
+
+  attr_reader ${3/(\w+)(: \{.*\}|: ['"\/\w]+|:)?/:$1/g}
+end
 endsnippet
