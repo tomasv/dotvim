@@ -100,8 +100,16 @@ snippet let!
 let!(:${1:name}) { ${2} }
 endsnippet
 
+global !p
+def class_name_from_file():
+    file_parts = snip.basename.split('_')
+    capitalized_parts = [x.capitalize() for x in file_parts]
+    class_name = ''.join(capitalized_parts)
+    snip.rv = class_name
+endglobal
+
 snippet clsfor
-class ${1}
+class ${1:`!p class_name_from_file()`}
   def self.${2}(*args)
     new(*args).run
   end
