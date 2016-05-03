@@ -48,7 +48,7 @@
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/The-NERD-tree"]
 	path = bundle/The-NERD-tree
-	url = https://github.com/vim-scripts/The-NERD-tree.git
+	url = https://github.com/tomasv/The-NERD-tree.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
