@@ -187,6 +187,7 @@ let NERDTreeMinimalUI=1
 " Ruby settings
 au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
 autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+let g:ruby_indent_block_style="do"
 
 " Clojure settings
 nnoremap cr :Require<CR>
