@@ -19,9 +19,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/tomasv/snipmate-snippets
-[submodule "bundle/ZenCoding.vim"]
-	path = bundle/ZenCoding.vim
-	url = https://github.com/vim-scripts/ZenCoding.vim.git
 [submodule "bundle/The-NERD-tree"]
 	path = bundle/The-NERD-tree
 	url = https://github.com/tomasv/The-NERD-tree.git
@@ -88,9 +85,6 @@
 [submodule "bundle/neoterm"]
 	path = bundle/neoterm
 	url = https://github.com/kassio/neoterm
-[submodule "bundle/ReplaceWithRegister"]
-	path = bundle/ReplaceWithRegister
-	url = https://github.com/vim-scripts/ReplaceWithRegister
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
