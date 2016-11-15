@@ -108,10 +108,6 @@ nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>l :TestLast<CR>
 
-" ruby hash
-noremap <Leader>rh :Hashrockets<CR>
-noremap <Leader>rb :Bashrockets<CR>
-
 " ctrlp settings
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
