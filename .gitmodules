@@ -19,9 +19,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/tomasv/snipmate-snippets
-[submodule "bundle/vim-octopress"]
-	path = bundle/vim-octopress
-	url = https://github.com/tangledhelix/vim-octopress.git
 [submodule "bundle/ZenCoding.vim"]
 	path = bundle/ZenCoding.vim
 	url = https://github.com/vim-scripts/ZenCoding.vim.git
