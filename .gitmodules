@@ -28,9 +28,6 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler
-[submodule "bundle/vim-stripper"]
-	path = bundle/vim-stripper
-	url = https://github.com/tomasv/vim-stripper
 [submodule "bundle/ctrlp-modified"]
 	path = bundle/ctrlp-modified
 	url = https://github.com/jasoncodes/ctrlp-modified.vim
