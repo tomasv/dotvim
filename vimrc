@@ -148,11 +148,6 @@ au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
 autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 let g:ruby_indent_block_style="do"
 
-" Clojure settings
-nnoremap cr :Require<CR>
-let g:clojure_fuzzy_indent = 1
-let g:clojure_fuzzy_indent_patterns = ['^.*']
-
 " JST settings
 autocmd FileType jst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
