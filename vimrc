@@ -155,9 +155,6 @@ nnoremap cr :Require<CR>
 let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = ['^.*']
 
-" vim-sexp
-let g:sexp_enable_insert_mode_mappings = 0
-
 " JST settings
 autocmd FileType jst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
