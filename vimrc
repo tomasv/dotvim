@@ -125,17 +125,19 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtClear()':           []
     \ }
 
-" ag.vim setting
+" ack.vim setting
 
-let g:ag_prg="ag --vimgrep --smart-case --nobreak"
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case --nobreak'
+endif
 
-nnoremap K :Ag '<cword>'<CR>
-nnoremap <c-k> :Ag '<cWORD>'<CR>
+nnoremap K :Ack! '<cword>'<CR>
+nnoremap <c-k> :Ack! '<cWORD>'<CR>
 
-nnoremap <Leader>* :Ag '<cword>'<CR>
-nnoremap <Leader>W* :Ag '<cWORD>'<CR>
+nnoremap <Leader>* :Ack! '<cword>'<CR>
+nnoremap <Leader>W* :Ack! '<cWORD>'<CR>
 
-vnoremap K "xy:Ag '<c-r>x'<CR>
+vnoremap K "xy:Ack! '<c-r>x'<CR>
 
 " NERD Tree settings
 map <leader>n :e %:p:h<CR>
