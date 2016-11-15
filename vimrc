@@ -1,5 +1,3 @@
-let g:python_host_prog='/usr/local/bin/python2.7'
-
 let g:pathogen_disabled = []
 if !has('nvim')
 	call add(g:pathogen_disabled, 'neoterm')
