@@ -101,20 +101,12 @@ nnoremap <Leader>ra :Rake<Space>
 
 if has('nvim')
 	let test#strategy = "neoterm"
-	" let g:neoterm_clear_cmd = "clear; printf '=%.0s' {1..80}; clear"
-	let g:neoterm_position = 'vertical'
-	nmap <silent> <leader>t :TestFile<CR>
-	nmap <silent> <leader>s :TestNearest<CR>
-	nmap <silent> <leader>l :TestLast<CR>
-else
-	" ruby-rspec
-	map <Leader>t :call RunCurrentSpecFile()<CR>
-	map <Leader>s :call RunNearestSpec()<CR>
-	map <Leader>rs :call RunAllSpecs()<CR>
-	map <Leader>l :call RunLastSpec()<CR>
 endif
 
-let g:rspec_command = "!bundle exec spring rspec -c --no-profile {spec}"
+let g:neoterm_position = 'vertical'
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>s :TestNearest<CR>
+nmap <silent> <leader>l :TestLast<CR>
 
 " ruby hash
 noremap <Leader>rh :Hashrockets<CR>

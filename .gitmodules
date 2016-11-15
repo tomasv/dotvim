@@ -82,9 +82,6 @@
 [submodule "bundle/vim-emblem"]
 	path = bundle/vim-emblem
 	url = https://github.com/heartsentwined/vim-emblem
-[submodule "bundle/vim-rspec"]
-	path = bundle/vim-rspec
-	url = https://github.com/thoughtbot/vim-rspec
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat
