@@ -146,10 +146,9 @@ au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
 autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 let g:ruby_indent_block_style="do"
 
-" JST settings
+autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html.handlebars setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType jst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-
-" YAML settings
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " UltiSnips settings
