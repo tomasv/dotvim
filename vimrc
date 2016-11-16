@@ -111,9 +111,6 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPModified<CR>
 let g:ctrlp_custom_ignore = { 'dir': '\v[\/](node_modules|tmp|external|doc|coverage|log|public|bin)$' }
-if !has('nvim')
-	let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
-endif
 let g:ctrlp_reuse_window = 'NERD\|NEOTERM'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],

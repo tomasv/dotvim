@@ -28,9 +28,6 @@
 [submodule "bundle/ctrlp-modified"]
 	path = bundle/ctrlp-modified
 	url = https://github.com/jasoncodes/ctrlp-modified.vim
-[submodule "bundle/ctrlp-cmatcher"]
-	path = bundle/ctrlp-cmatcher
-	url = https://github.com/JazzCore/ctrlp-cmatcher
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
