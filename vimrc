@@ -105,7 +105,7 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPModified<CR>
 let g:ctrlp_custom_ignore = { 'dir': '\v[\/](node_modules|tmp|external|doc|coverage|log|public|bin)$' }
-let g:ctrlp_reuse_window = 'NERD\|NEOTERM'
+let g:ctrlp_reuse_window = 'NEOTERM'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
     \ 'AcceptSelection("h")': ['<c-cr>', '<c-s>'],
@@ -127,10 +127,6 @@ nnoremap <Leader>* :Ack! '<cword>'<CR>
 nnoremap <Leader>W* :Ack! '<cWORD>'<CR>
 
 vnoremap K "xy:Ack! '<c-r>x'<CR>
-
-" NERD Tree settings
-map <leader>n :e %:p:h<CR>
-let NERDTreeMinimalUI=1
 
 " Ruby settings
 let g:ruby_indent_block_style="do"
