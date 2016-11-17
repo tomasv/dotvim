@@ -135,3 +135,6 @@ let g:ruby_indent_block_style="do"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+let g:vimfiler_as_default_explorer = 1
+map <leader>n :VimFiler -find<CR>

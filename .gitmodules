@@ -49,3 +49,9 @@
 [submodule "bundle/vim-sleuth"]
 	path = bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim
+[submodule "bundle/vimfiler.vim"]
+	path = bundle/vimfiler.vim
+	url = https://github.com/Shougo/vimfiler.vim
