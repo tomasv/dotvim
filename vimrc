@@ -68,12 +68,6 @@ nnoremap <Leader>w :w<CR>
 hi link TagListFileName Normal
 hi PmenuSel ctermfg=15
 
-" CoffeeScript settings
-au FileType coffee setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-
-" JavaScript settings
-au FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-
 " My mappings
 nnoremap gp `[v`]
 
@@ -139,14 +133,7 @@ map <leader>n :e %:p:h<CR>
 let NERDTreeMinimalUI=1
 
 " Ruby settings
-au BufRead,BufNewFile Guardfile,Vagrantfile set ft=ruby
-autocmd FileType ruby,eruby,scss,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 let g:ruby_indent_block_style="do"
-
-autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType html.handlebars setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType jst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " UltiSnips settings
 let g:UltiSnipsExpandTrigger="<tab>"
