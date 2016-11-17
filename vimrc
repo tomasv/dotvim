@@ -10,7 +10,6 @@ filetype plugin indent on
 
 " colorscheme settings
 colorscheme molokai
-hi clear SignColumn " for gitgutter, nicer looking sign column
 
 " VIM settings
 set path+=./lib,./spec
@@ -137,4 +136,4 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 let g:vimfiler_as_default_explorer = 1
-map <leader>n :VimFiler -find<CR>
+map <leader>n :VimFiler -find -simple<CR>
