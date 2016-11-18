@@ -74,6 +74,7 @@ nmap ]t :tnext<CR>
 nmap [t :tprev<CR>
 
 nnoremap <Leader>cl :ccl<CR>
+nnoremap <Leader>cw :cwindow<CR>
 
 " completion popup behavior tweak
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
