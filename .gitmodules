@@ -1,54 +1,54 @@
 [submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
+	path = pack/default/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+	path = pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 [submodule "bundle/vim-repeat"]
-	path = bundle/vim-repeat
+	path = pack/default/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
 [submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
+	path = pack/default/start/ultisnips
 	url = https://github.com/SirVer/ultisnips
 [submodule "bundle/vim-bundler"]
-	path = bundle/vim-bundler
+	path = pack/default/start/vim-bundler
 	url = https://github.com/tpope/vim-bundler
 [submodule "bundle/ctrlp-modified"]
-	path = bundle/ctrlp-modified
+	path = pack/default/start/ctrlp-modified
 	url = https://github.com/jasoncodes/ctrlp-modified.vim
 [submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
+	path = pack/default/start/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
 [submodule "bundle/vim-test"]
-	path = bundle/vim-test
+	path = pack/default/start/vim-test
 	url = https://github.com/janko-m/vim-test
 [submodule "bundle/neoterm"]
-	path = bundle/neoterm
+	path = pack/default/start/neoterm
 	url = https://github.com/kassio/neoterm
 [submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+	path = pack/default/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/vim-polyglot"]
-	path = bundle/vim-polyglot
+	path = pack/default/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
 [submodule "bundle/vim-unimpaired"]
-	path = bundle/vim-unimpaired
+	path = pack/default/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+	path = pack/default/start/vim-surround
 	url = https://github.com/tpope/vim-surround
 [submodule "bundle/vim-sleuth"]
-	path = bundle/vim-sleuth
+	path = pack/default/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
 [submodule "bundle/unite.vim"]
-	path = bundle/unite.vim
+	path = pack/default/start/unite.vim
 	url = https://github.com/Shougo/unite.vim
 [submodule "bundle/vimfiler.vim"]
-	path = bundle/vimfiler.vim
+	path = pack/default/start/vimfiler.vim
 	url = https://github.com/Shougo/vimfiler.vim
 [submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
+	path = pack/default/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
 [submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
+	path = pack/default/start/vim-rails
 	url = https://github.com/tpope/vim-rails/

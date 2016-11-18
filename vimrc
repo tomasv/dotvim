@@ -1,10 +1,3 @@
-let g:pathogen_disabled = []
-if !has('nvim')
-	call add(g:pathogen_disabled, 'neoterm')
-endif
-
-execute pathogen#infect()
-
 syntax on
 filetype plugin indent on
 
