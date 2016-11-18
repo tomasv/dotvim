@@ -8,12 +8,14 @@ set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set clipboard=unnamed
 set completeopt=longest,menuone
+set incsearch
 set laststatus=2
 set mouse=a
 set noequalalways
 set noswapfile
 set number numberwidth=3
 set path+=./lib,./spec
+set sessionoptions-=options
 set smartcase ignorecase
 set statusline=%<%f\ %([%Y%M%R%{NewFileIndicator()}%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
 set tags+=tags;
