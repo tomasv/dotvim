@@ -136,5 +136,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" vimfiler settings
 let g:vimfiler_as_default_explorer = 1
 map <leader>n :VimFiler -find -simple<CR>
+autocmd FileType vimfiler map <buffer> u <Plug>(vimfiler_switch_to_parent_directory)
