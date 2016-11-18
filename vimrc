@@ -8,10 +8,9 @@ set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set clipboard=unnamed
 set completeopt=longest,menuone
-set hidden
 set laststatus=2
 set mouse=a
-set noea
+set noequalalways
 set noswapfile
 set number numberwidth=3
 set path+=./lib,./spec
