@@ -1,45 +1,29 @@
 syntax on
 filetype plugin indent on
 
-" colorscheme settings
 colorscheme molokai
 
-" VIM settings
-set path+=./lib,./spec
-set tags+=tags;/,./gems.tags;/,gems.tags;/
-
-set directory=~/.vim/swp//
-set undodir=~/.vim/undo//
-set backupdir=~/.vim/backup//
-set undofile
-set noswapfile
-
 set autoread
-set hidden
-
-set wildmenu wildmode=full
+set backspace=indent,eol,start
+set backupdir=~/.vim/backup//
+set clipboard=unnamed
 set completeopt=longest,menuone
-set ignorecase smartcase
-set wildignore=*.png,*.jpg,*.xcf,*.wav,log/*,tmp/*,coverage/*,*.gif,*.svg
-
+set hidden
 set laststatus=2
+set mouse=a
+set noea
+set noswapfile
+set number numberwidth=3
+set path+=./lib,./spec
+set smartcase ignorecase
+set statusline=%<%f\ %([%Y%M%R%{NewFileIndicator()}%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
+set tags+=tags;
+set undofile undodir=~/.vim/undo//
+set wildmenu wildmode=full
 
 function NewFileIndicator()
-	if filereadable(expand('%:p'))
-		return ''
-	end
-	return ',NEWFILE'
+  return filereadable(expand('%:p')) ? '' : ',NEWFILE'
 endfunction
-
-set statusline=%<%f\ %([%Y%M%R%{NewFileIndicator()}%{fugitive#statusline()}]%)%=%-14.(%l,%c%V%)\ %P
-
-set number
-set numberwidth=3
-set backspace=indent,eol,start
-set clipboard=unnamed
-set mouse=a
-
-set noea
 
 let mapleader=','
 let maplocalleader=' '
@@ -47,36 +31,19 @@ let maplocalleader=' '
 noremap ; :
 noremap Y y$
 noremap Q <nop>
-
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-endif
-
-nnoremap <Leader>w :w<CR>
-
-" autocmd VimResized * :wincmd =
-
-" Custom highlighting
-hi link TagListFileName Normal
-hi PmenuSel ctermfg=15
-
-" My mappings
 nnoremap gp `[v`]
-
-nmap ]t :tnext<CR>
-nmap [t :tprev<CR>
-
+nnoremap <Leader>w :w<CR>
 nnoremap <Leader>cl :ccl<CR>
 nnoremap <Leader>cw :cwindow<CR>
-
-" completion popup behavior tweak
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" alternate mappings
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
 
+" completion popup behavior tweak
+
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 " rails mappings
+
 nnoremap <Leader>rm :Emodel<Space>
 nnoremap <Leader>rc :Econtroller<Space>
 nnoremap <Leader>rg :Egenerate<Space>
@@ -85,15 +52,22 @@ nnoremap <Leader>rv :Eview<Space>
 nnoremap <Leader>ra :Rake<Space>
 
 if has('nvim')
-	let test#strategy = "neoterm"
+  tnoremap <Esc> <C-\><C-n>
 endif
 
-let g:neoterm_position = 'vertical'
+" vim-test
+
+if has('nvim')
+  let test#strategy = "neoterm"
+  let g:neoterm_position = 'vertical'
+endif
+
 nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>l :TestLast<CR>
 
-" ctrlp settings
+" ctrlp
+
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPModified<CR>
@@ -122,14 +96,17 @@ nnoremap <Leader>W* :Ack! '<cWORD>'<CR>
 vnoremap K "xy:Ack! '<c-r>x'<CR>
 
 " Ruby settings
+
 let g:ruby_indent_block_style="do"
 
 " UltiSnips settings
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " vimfiler settings
+
 let g:vimfiler_as_default_explorer = 1
 map <leader>n :VimFiler -find -simple<CR>
 autocmd FileType vimfiler map <buffer> u <Plug>(vimfiler_switch_to_parent_directory)
