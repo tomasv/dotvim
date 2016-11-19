@@ -8,6 +8,7 @@ set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set clipboard=unnamed
 set completeopt=longest,menuone
+set hidden " needed for neovim terminal buffers, otherwise closing window closes terminal process
 set incsearch
 set laststatus=2
 set mouse=a
