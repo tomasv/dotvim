@@ -23,6 +23,11 @@ set tags+=tags;
 set undofile undodir=~/.vim/undo//
 set wildmenu wildmode=full
 
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set autoindent
+
 function NewFileIndicator()
   return filereadable(expand('%:p')) ? '' : ',NEWFILE'
 endfunction
