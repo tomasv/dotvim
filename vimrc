@@ -10,6 +10,9 @@ set clipboard=unnamed
 set completeopt=longest,menuone
 set hidden " needed for neovim terminal buffers, otherwise closing window closes terminal process
 set incsearch
+if has('nvim')
+  set inccommand=nosplit
+endif
 set laststatus=2
 set mouse=a
 set noequalalways
