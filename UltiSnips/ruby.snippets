@@ -127,3 +127,14 @@ class ${1:`!p class_name_from_file()`}
   attr_reader ${3/(\w+)(: \{.*\}|: ['"\/\w]+|:)?/:$1/g}
 end
 endsnippet
+
+snippet clsrun
+class ${1:`!p class_name_from_file()`}
+  include Interactor::Initializer
+  initialize_with ${2}
+
+  def run
+    $0
+  end
+end
+endsnippet
