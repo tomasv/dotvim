@@ -52,3 +52,6 @@
 [submodule "bundle/vim-rails"]
 	path = pack/default/start/vim-rails
 	url = https://github.com/tpope/vim-rails/
+[submodule "pack/default/start/emmet-vim"]
+	path = pack/default/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim
