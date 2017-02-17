@@ -90,6 +90,7 @@ else
   nmap <silent> <leader>l :TestLast<CR>
 endif
 
+let g:polyglot_disabled = ['elm']
 " ctrlp
 
 nnoremap <Leader>o :CtrlP<CR>

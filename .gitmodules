@@ -55,3 +55,6 @@
 [submodule "pack/default/start/emmet-vim"]
 	path = pack/default/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+[submodule "pack/default/start/elm-vim"]
+	path = pack/default/start/elm-vim
+	url = https://github.com/ElmCast/elm-vim
