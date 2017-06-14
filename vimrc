@@ -139,5 +139,5 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
 let g:vimfiler_expand_jump_to_first_child = 0
-map <leader>n :execute 'VimFiler -find -simple ' . expand('%:p:h')<CR>
+map <leader>n :execute 'VimFilerCreate -find -simple ' . expand('%:p:h')<CR>
 autocmd FileType vimfiler map <buffer> u <Plug>(vimfiler_smart_h)
