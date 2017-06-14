@@ -1,0 +1,63 @@
+snippet ea "oneline forEach" w
+forEach(${1:element} => ${2});${0}
+endsnippet
+
+snippet each "multiline forEach" w
+forEach(${1:element} => {
+  ${2}
+});${0}
+endsnippet
+
+snippet map "oneline map" w
+map(${1:element} => ${2});${0}
+endsnippet
+
+snippet mapp "multiline map" w
+map(${1:element} => {
+  ${2}
+});${0}
+endsnippet
+
+snippet el "arrow function body" i
+(${1:element} => ${2});${0}
+endsnippet
+
+snippet ell "arrow function multiline body" i
+(${1:element} => {
+  ${2}
+});${0}
+endsnippet
+
+snippet log "console log shorthand"
+console.log(${1});${0}
+endsnippet
+
+snippet for "for (;;)"
+for (let ${1:i} = 0; $1 < ${2:limit}; $1++) {
+  ${0}
+}
+endsnippet
+
+snippet forof "for ( of )"
+for (let ${1:element} of ${2:collection}) {
+  ${0}
+}
+endsnippet
+
+snippet comp "component class"
+class ${1:MyComponent} extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    ${0}
+  }
+}
+endsnippet
+
+snippet fcomp "function component"
+function ${1:MyComponent}(props) {
+  ${0}
+}
+endsnippet
