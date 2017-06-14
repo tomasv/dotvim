@@ -106,10 +106,14 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtClear()':           []
     \ }
 
-" ack.vim setting
-
 if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ackprg = 'ag --vimgrep --smart-case --nobreak'
+endif
+
+if executable('rg')
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ackprg = 'rg --vimgrep --smart-case --no-heading'
 endif
 
 nnoremap K :Ack! '<cword>'<CR>
