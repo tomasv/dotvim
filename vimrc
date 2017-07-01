@@ -53,6 +53,11 @@ nnoremap <Leader>cw :cwindow<CR>
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
 
+" strip whitespace
+
+" autocmd FileType ruby autocmd BufEnter <buffer> EnableStripWhitespaceOnSave
+" autocmd BufEnter * EnableStripWhitespaceOnSave
+
 " completion popup behavior tweak
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"

@@ -61,3 +61,6 @@
 [submodule "pack/default/start/splitjoin.vim"]
 	path = pack/default/start/splitjoin.vim
 	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule "pack/default/start/vim-better-whitespace"]
+	path = pack/default/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
