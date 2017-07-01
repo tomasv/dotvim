@@ -133,6 +133,10 @@ vnoremap K "xy:Ack! '<c-r>x'<CR>
 
 let g:ruby_indent_block_style="do"
 
+" JavaScript settings
+
+let g:javascript_plugin_flow = 1
+
 " UltiSnips settings
 
 let g:UltiSnipsExpandTrigger="<tab>"
