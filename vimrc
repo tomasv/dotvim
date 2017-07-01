@@ -141,3 +141,10 @@ let g:vimfiler_safe_mode_by_default = 0
 let g:vimfiler_expand_jump_to_first_child = 0
 map <leader>n :execute 'VimFilerCreate -find -simple ' . expand('%:p:h')<CR>
 autocmd FileType vimfiler map <buffer> u <Plug>(vimfiler_smart_h)
+
+" splitjoin
+let g:splitjoin_split_mapping = ''
+let g:splitjoin_join_mapping = ''
+
+nmap <Leader>j :SplitjoinJoin<cr>
+nmap <Leader>k :SplitjoinSplit<cr>
