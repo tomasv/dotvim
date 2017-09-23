@@ -157,3 +157,22 @@ let g:splitjoin_join_mapping = ''
 
 nmap <Leader>j :SplitjoinJoin<cr>
 nmap <Leader>k :SplitjoinSplit<cr>
+
+let g:ale_sign_error = '●'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0
+let g:ale_set_highlights = 0
+let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\   'javascript': ['eslint'],
+\}
+
+nmap <Leader>cl :ALELint<cr>
+nmap <Leader>cf :ALEFix<cr>
+
+highlight! link SignColumn LineNr
+highlight ALEErrorSign ctermfg=162 ctermbg=234
+highlight ALEStyleErrorSign ctermfg=162 ctermbg=234
+highlight link ALEInfoSign LineNr
+highlight link ALEStyleWarningSign LineNr
+highlight link ALEWarningSign LineNr
