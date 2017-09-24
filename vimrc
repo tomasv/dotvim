@@ -167,7 +167,7 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 
-nmap <Leader>cl :ALELint<cr>
+nmap <Leader>cc :ALELint<cr>
 nmap <Leader>cf :ALEFix<cr>
 
 highlight! link SignColumn LineNr
