@@ -158,9 +158,12 @@ let g:splitjoin_join_mapping = ''
 nmap <Leader>j :SplitjoinJoin<cr>
 nmap <Leader>k :SplitjoinSplit<cr>
 
+let g:ale_enabled = 1
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_save = 0
 let g:ale_set_highlights = 0
 let g:ale_fixers = {
 \   'ruby': ['rubocop'],
