@@ -58,3 +58,9 @@ snippet fr
 # frozen_string_literal: true
 
 endsnippet
+
+snippet alter
+execute_online_alter '${1}', <<-SQL
+  ${2}
+SQL
+endsnippet
