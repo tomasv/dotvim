@@ -67,3 +67,6 @@
 [submodule "pack/default/start/ale.git"]
 	path = pack/default/start/ale.git
 	url = https://github.com/w0rp/ale.git
+[submodule "pack/default/start/vim-rhubarb"]
+	path = pack/default/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
