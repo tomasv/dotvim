@@ -7,7 +7,7 @@ set autoread
 set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set clipboard=unnamed
-set completeopt=longest,menuone
+set completeopt=preview,noselect,menuone
 set hidden " needed for neovim terminal buffers, otherwise closing window closes terminal process
 set incsearch
 if has('nvim')
