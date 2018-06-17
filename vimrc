@@ -22,10 +22,6 @@ set path+=./lib,./spec
 set sessionoptions-=options
 set smartcase ignorecase
 set statusline=%<%f\ %([%Y%M%R%{NewFileIndicator()}%{fugitive#statusline()}]%)
-if has('nvim')
-  set statusline+=%{neoterm#test#status('running')}
-  set statusline+=%{neoterm#test#status('failed')}
-endif
 set statusline+=%=%-14.(%l,%c%V%)\ %P
 set tags+=tags;
 set undofile undodir=~/.vim/undo//
@@ -79,21 +75,13 @@ endif
 
 if has('nvim')
   let test#strategy = "neoterm"
-
-  let g:neoterm_position = 'vertical'
-  let g:neoterm_run_tests_bg = 1
-  let g:neoterm_test_status = { 'running': 'R', 'success': 'S', 'failed': 'F' }
-  let g:neoterm_autoinsert = 1
-
-  nmap <silent> <leader>t :call neoterm#test#run('file')<CR>
-  nmap <silent> <leader>s :call neoterm#test#run('current')<CR>
-  nmap <silent> <leader>l :call neoterm#test#rerun()<CR>
+  let g:neoterm_default_mod = 'rightbelow vertical'
   nmap <silent> <leader>f :Ttoggle<CR>
-else
-  nmap <silent> <leader>t :TestFile<CR>
-  nmap <silent> <leader>s :TestNearest<CR>
-  nmap <silent> <leader>l :TestLast<CR>
 endif
+
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>s :TestNearest<CR>
+nmap <silent> <leader>l :TestLast<CR>
 
 let g:polyglot_disabled = ['elm']
 " ctrlp
