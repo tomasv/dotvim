@@ -73,3 +73,6 @@
 [submodule "pack/default/start/vim-abolish"]
 	path = pack/default/start/vim-abolish
 	url = https://github.com/tpope/vim-abolish
+[submodule "pack/default/start/vim-sensible"]
+	path = pack/default/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
