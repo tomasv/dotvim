@@ -1,18 +1,16 @@
 colorscheme molokai
 
-set backupdir=~/.vim/backup//
 set clipboard=unnamed
 set completeopt=preview,noselect,menuone
 set hidden " needed for neovim terminal buffers, otherwise closing window closes terminal process
 set mouse=a
-set noequalalways
 set noswapfile
 set number numberwidth=3
 set smartcase ignorecase
-set undofile undodir=~/.vim/undo//
 
 if has('nvim')
   set inccommand=nosplit
+  tnoremap <Esc> <C-\><C-n>
 endif
 
 let mapleader=','
@@ -26,10 +24,6 @@ nnoremap <Leader>cl :ccl<CR>
 nnoremap <Leader>cw :cwindow<CR>
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
-
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-endif
 
 " completion popup behavior tweak
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -90,7 +84,6 @@ let g:ruby_indent_block_style="do"
 let g:javascript_plugin_flow = 1
 
 " UltiSnips settings
-let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
@@ -115,10 +108,7 @@ let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 0
 let g:ale_set_highlights = 0
-let g:ale_fixers = {
-\   'ruby': ['rubocop'],
-\   'javascript': ['eslint'],
-\}
+let g:ale_fixers = { 'ruby': ['rubocop'], 'javascript': ['eslint'] }
 
 nmap <Leader>cc :ALELint<cr>
 nmap <Leader>cf :ALEFix<cr>
