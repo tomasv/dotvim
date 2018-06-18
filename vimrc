@@ -2,6 +2,7 @@ colorscheme molokai
 
 set clipboard=unnamed
 set completeopt=preview,noselect,menuone
+set foldtext=getline(v:foldstart)
 set hidden " needed for neovim terminal buffers, otherwise closing window closes terminal process
 set mouse=a
 set noswapfile
