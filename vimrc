@@ -30,11 +30,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " rails mappings
 nnoremap <Leader>rm :Emodel<Space>
-nnoremap <Leader>rc :Econtroller<Space>
-nnoremap <Leader>rg :Egenerate<Space>
-nnoremap <Leader>rj :Ejavascript<Space>
-nnoremap <Leader>rv :Eview<Space>
-nnoremap <Leader>ra :Rake<Space>
 
 " vim-test
 nmap <silent> <leader>t :TestFile<CR>
@@ -52,7 +47,6 @@ let g:ctrlp_reuse_window = 'NEOTERM'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
     \ 'AcceptSelection("h")': ['<c-cr>', '<c-s>'],
-    \ 'CreateNewFile()':      ['<c-x>'],
     \ 'PrtClearCache()':      ['<c-u>'],
     \ 'PrtClear()':           []
     \ }
@@ -73,8 +67,6 @@ endif
 
 nnoremap K :Ack! '<cword>'<CR>
 nnoremap <c-k> :Ack! '<cWORD>'<CR>
-nnoremap <Leader>* :Ack! '<cword>'<CR>
-nnoremap <Leader>W* :Ack! '<cWORD>'<CR>
 vnoremap K "xy:Ack! '<c-r>x'<CR>
 
 " Ruby settings
