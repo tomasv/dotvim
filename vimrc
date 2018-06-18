@@ -20,7 +20,7 @@ if has('nvim')
   tnoremap <Esc> <C-\><C-n>
 endif
 
-let mapleader=','
+let g:mapleader=','
 
 noremap ; :
 noremap Y y$
@@ -43,7 +43,7 @@ nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>l :TestLast<CR>
 if has('nvim')
-  let test#strategy = "neoterm"
+  let g:test#strategy = 'neoterm'
   let g:neoterm_default_mod = 'rightbelow vertical'
   nmap <silent> <leader>f :Ttoggle<CR>
 endif
@@ -72,14 +72,14 @@ if executable('rg')
 endif
 
 " Ruby settings
-let g:ruby_indent_block_style="do"
+let g:ruby_indent_block_style='do'
 
 " JavaScript settings
 let g:javascript_plugin_flow = 1
 
 " UltiSnips settings
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 " vimfiler settings
 map <leader>n :execute 'VimFilerCreate -find -simple ' . expand('%:p:h')<CR>
