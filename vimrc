@@ -16,12 +16,7 @@ if has('nvim')
   set inccommand=nosplit
 endif
 
-function NewFileIndicator()
-  return filereadable(expand('%:p')) ? '' : ',NEWFILE'
-endfunction
-
 let mapleader=','
-let maplocalleader=' '
 
 let g:polyglot_disabled = ['elm']
 
@@ -38,10 +33,6 @@ nnoremap <Leader>va :AV<CR>
 if has('nvim')
   tnoremap <Esc> <C-\><C-n>
 endif
-
-" strip whitespace
-" autocmd FileType ruby autocmd BufEnter <buffer> EnableStripWhitespaceOnSave
-" autocmd BufEnter * EnableStripWhitespaceOnSave
 
 " completion popup behavior tweak
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -65,11 +56,7 @@ if has('nvim')
   nmap <silent> <leader>f :Ttoggle<CR>
 endif
 
-" ctrlp
-nnoremap <Leader>o :CtrlP<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>m :CtrlPModified<CR>
-let g:ctrlp_custom_ignore = { 'dir': '\v[\/](node_modules|tmp|external|doc|coverage|log)$' }
+" ctrlp and ack
 let g:ctrlp_reuse_window = 'NEOTERM'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
@@ -79,7 +66,10 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtClear()':           []
     \ }
 
-" ack
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>m :CtrlPModified<CR>
+
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ackprg = 'ag --vimgrep --smart-case --nobreak'
