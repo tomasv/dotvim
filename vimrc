@@ -9,7 +9,6 @@ set noequalalways
 set noswapfile
 set number numberwidth=3
 set smartcase ignorecase
-set tags+=tags;
 set undofile undodir=~/.vim/undo//
 
 if has('nvim')
