@@ -18,8 +18,6 @@ endif
 
 let mapleader=','
 
-let g:polyglot_disabled = ['elm']
-
 noremap ; :
 noremap Y y$
 noremap Q <nop>
