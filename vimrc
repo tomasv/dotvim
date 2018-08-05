@@ -83,9 +83,11 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 " vimfiler settings
 map <leader>n :execute 'VimFilerCreate -find -simple ' . expand('%:p:h')<CR>
+nnoremap - :execute 'VimFilerCreate -find -simple ' . expand('%:p:h')<CR>
 augroup filetype_vimfiler
   autocmd!
   autocmd FileType vimfiler map <buffer> u <Plug>(vimfiler_smart_h)
+  autocmd FileType vimfiler map <buffer> - <Plug>(vimfiler_smart_h)
 augroup END
 
 let g:vimfiler_as_default_explorer = 1
