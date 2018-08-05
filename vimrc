@@ -17,7 +17,14 @@ set smartcase ignorecase
 
 if has('nvim')
   set inccommand=nosplit
+endif
+
+if has('nvim')
   tnoremap <Esc> <C-\><C-n>
+endif
+
+if has('terminal')
+  tnoremap <Esc> <C-W>N
 endif
 
 let g:mapleader=','
@@ -42,7 +49,8 @@ nnoremap <Leader>rm :Emodel<Space>
 nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>l :TestLast<CR>
-if has('nvim')
+
+if has('terminal') || has('nvim')
   let g:test#strategy = 'neoterm'
   let g:neoterm_default_mod = 'rightbelow vertical'
   nmap <silent> <leader>f :Ttoggle<CR>
