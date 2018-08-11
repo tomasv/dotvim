@@ -1,4 +1,4 @@
-set gfn=Monaco\ 10
+set gfn=Source\ Code\ Pro\ Light:h13
 set guioptions=aigemt
 
 " set cul
