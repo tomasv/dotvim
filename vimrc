@@ -76,7 +76,7 @@ if executable('ag')
 endif
 if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-  let g:ackprg = 'rg --vimgrep --smart-case --no-heading'
+  let g:ackprg = 'rg --sort path --vimgrep --smart-case --no-heading'
 endif
 
 " Ruby settings
