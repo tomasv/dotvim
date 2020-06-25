@@ -40,12 +40,6 @@
 [submodule "bundle/vim-sleuth"]
 	path = pack/default/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
-[submodule "bundle/unite.vim"]
-	path = pack/default/start/unite.vim
-	url = https://github.com/Shougo/unite.vim
-[submodule "bundle/vimfiler.vim"]
-	path = pack/default/start/vimfiler.vim
-	url = https://github.com/Shougo/vimfiler.vim
 [submodule "bundle/vim-commentary"]
 	path = pack/default/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
@@ -73,3 +67,9 @@
 [submodule "pack/default/start/vim-sensible"]
 	path = pack/default/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
+[submodule "pack/default/start/defx.nvim"]
+	path = pack/default/start/defx.nvim
+	url = https://github.com/Shougo/defx.nvim
+[submodule "pack/default/start/vim-vinegar"]
+	path = pack/default/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
