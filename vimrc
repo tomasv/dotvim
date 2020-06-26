@@ -61,6 +61,9 @@ nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>m :GFiles?<CR>
 
+let g:fzf_buffers_jump = 1
+autocmd! FileType fzf tmap<buffer> <Esc> <Esc>
+
 nnoremap K :Ack! '<cword>'<CR>
 nnoremap <c-k> :Ack! '<cWORD>'<CR>
 vnoremap K "xy:Ack! '<c-r>x'<CR>
