@@ -1,3 +1,4 @@
+highlight clear
 colorscheme molokai
 highlight! link SignColumn LineNr
 highlight ALEErrorSign ctermfg=162 ctermbg=234
@@ -65,7 +66,10 @@ nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>m :GFiles?<CR>
 
 let g:fzf_buffers_jump = 1
-autocmd! FileType fzf tmap<buffer> <Esc> <C-c>
+augroup fzf_mappings
+  autocmd!
+  autocmd FileType fzf tmap<buffer> <Esc> <C-c>
+augroup END
 
 " ack
 nnoremap K :Ack! '<cword>'<CR>
