@@ -30,6 +30,8 @@ endif
 
 let g:mapleader=','
 
+nnoremap <leader>vv :source $MYVIMRC<cr>
+
 noremap ; :
 noremap Y y$
 noremap Q <nop>
@@ -40,7 +42,7 @@ nnoremap <Leader>cw :cwindow<CR>
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
 
-command ClearLcd execute 'cd' getcwd(-1)
+command! ClearLcd execute 'cd' getcwd(-1)
 nnoremap <Leader>cd :ClearLcd<CR>
 
 " completion popup behavior tweak
