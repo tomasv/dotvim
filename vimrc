@@ -39,6 +39,9 @@ nnoremap <Leader>cw :cwindow<CR>
 nnoremap <Leader>a :A<CR>
 nnoremap <Leader>va :AV<CR>
 
+command ClearLcd execute 'cd' getcwd(-1)
+nnoremap <Leader>cd :ClearLcd<CR>
+
 " completion popup behavior tweak
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
@@ -90,6 +93,13 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 if has('nvim')
   map <silent> <leader>n :call DefxSmartOpen()<CR>
   nnoremap <silent> - :call DefxSmartOpen()<CR>
+
+  augroup defx_group
+    autocmd!
+    autocmd VimEnter * silent! autocmd! FileExplorer *
+    autocmd BufEnter * call s:open_defx_if_directory()
+    autocmd FileType defx call s:defx_my_settings()
+  augroup END
 else
   map <silent> <leader>n :Explore<CR>
   nnoremap <silent> - :Explore<CR>
@@ -104,8 +114,6 @@ function! DefxSmartOpen() abort
   let base_path = match(file_path, cwd) == 0 ? cwd : file_path
   silent! execute 'Defx ' . base_path . ' -new -search=' . expand('%:p')
 endfunction
-
-autocmd FileType defx call s:defx_my_settings()
 
 function! s:defx_my_settings() abort
   " Define mappings
@@ -136,6 +144,18 @@ function! s:defx_my_settings() abort
   nnoremap <silent><buffer><expr> j line('.') == line('$') ? 'gg' : 'j'
   nnoremap <silent><buffer><expr> k line('.') == 1 ? 'G' : 'k'
   nnoremap <buffer> ; :
+endfunction
+
+function! s:open_defx_if_directory()
+  try
+    let l:full_path = expand(expand('%:p'))
+  catch
+    return
+  endtry
+
+  if isdirectory(l:full_path)
+    execute "Defx `expand('%:p')` | bd " . expand('%:r')
+  endif
 endfunction
 
 " splitjoin
