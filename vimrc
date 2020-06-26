@@ -56,26 +56,18 @@ if has('terminal') || has('nvim')
   nmap <silent> <leader>f :Ttoggle<CR>
 endif
 
-" ctrlp and ack
-nnoremap <Leader>o :CtrlP<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>m :CtrlPModified<CR>
+" fzf and ack
+nnoremap <Leader>o :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>m :GFiles?<CR>
+
 nnoremap K :Ack! '<cword>'<CR>
 nnoremap <c-k> :Ack! '<cWORD>'<CR>
 vnoremap K "xy:Ack! '<c-r>x'<CR>
-let g:ctrlp_reuse_window = 'NEOTERM'
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<cr>', '<c-y>', '<2-LeftMouse>'],
-    \ 'AcceptSelection("h")': ['<c-cr>', '<c-s>'],
-    \ 'PrtClearCache()':      ['<c-u>'],
-    \ 'PrtClear()':           []
-    \ }
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ackprg = 'ag --vimgrep --smart-case --nobreak'
 endif
 if executable('rg')
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ackprg = 'rg --sort path --vimgrep --smart-case --no-heading'
 endif
 

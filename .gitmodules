@@ -1,6 +1,3 @@
-[submodule "bundle/ctrlp.vim"]
-	path = pack/default/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/vim-fugitive"]
 	path = pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
@@ -13,9 +10,6 @@
 [submodule "bundle/vim-bundler"]
 	path = pack/default/start/vim-bundler
 	url = https://github.com/tpope/vim-bundler
-[submodule "bundle/ctrlp-modified"]
-	path = pack/default/start/ctrlp-modified
-	url = https://github.com/jasoncodes/ctrlp-modified.vim
 [submodule "bundle/vim-dispatch"]
 	path = pack/default/start/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
@@ -73,3 +67,9 @@
 [submodule "pack/default/start/vim-vinegar"]
 	path = pack/default/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
+[submodule "pack/default/start/fzf"]
+	path = pack/default/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "pack/default/start/fzf.vim"]
+	path = pack/default/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
